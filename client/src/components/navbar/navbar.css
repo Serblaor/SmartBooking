@@ -1,0 +1,186 @@
+.navbar{
+  height: 50px;
+  background-color: #192231;
+  display: flex;
+  flex-direction: row;
+
+  text-decoration: none;
+  
+}
+
+.navContainer{
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  
+  
+}
+
+.logo{
+  font-weight: 500;
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+a{
+  text-decoration: none;
+}
+
+.navItems{
+  flex: 1 1 100%;
+  display: flex;
+  
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.navItems p{
+  display: flex;
+  position: absolute;
+}
+.navItems p:first-child {
+  right: 30%;
+  float: left;
+}
+
+.navItems p:last-child {
+  left: 30%;
+  float: right;
+}
+
+.navButton1{
+  margin-left: 20px;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  background-color: #192231;
+  font-size: 1.5rem;
+}
+.navButton1:first-child {
+  right: 75%;
+  float: left;
+}
+
+.navButton1:last-child {
+  left: 75%;
+  float: right;
+}
+.navButton2{
+  margin-left: 20px;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.navButton3{
+  margin-left: 20px;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.imgUser img{
+  display: flex;
+  position: absolute;
+  border-radius: 50%;
+  width: 3rem;
+  height: 2.5rem;
+  top: 5px;
+  margin-left: -3rem;
+  
+}
+.imgUser img:first-child {
+  right: 75%;
+  float: left;
+}
+
+.imgUser img:last-child {
+  left: 75%;
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navItems {
+   
+    padding: 0;
+    margin: 0;
+  }
+
+  .navButton {
+    display: flex;
+    
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logo{
+    margin-left: 3px;
+    font-size: 1rem;
+  }
+  .navButton1 {
+    background-color: #192231;
+  }
+  .navButton2 {
+    display: flex;
+    padding: 0.4rem 2rem;
+    font-size: 0.7rem;
+    float: right;
+    margin-right: 0;
+    margin-left: 3rem;
+  }
+  .navButton3 {
+    display: flex;
+    padding: 0.4rem 2rem;
+    font-size: 0.7rem;
+    float: right;
+   margin-right: 0;
+   margin-left: 0;
+    
+  }
+  p{
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  .imgUser img{
+    
+    display: flex;
+    position: absolute;
+    
+    
+  }
+  
+  .navItems p{
+    display: flex;
+    position: absolute;
+    margin-right: 10px;
+  }
+  .navItems p:first-child {
+    
+    float: left;
+  }
+  
+  .navItems p:last-child {
+    left: 1%;
+    float: right;
+  }
+
+}
+
+
