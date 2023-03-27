@@ -2,9 +2,10 @@ import User from "../models/User.js";
 
 export const updateUser = async (req,res,next)=>{
   try {
+    const {_id,username,email,passport,country,city,gender,phone,password,isAdmin,createdAt,updatedAt,__v,img} =req.body
     const updatedUser = await User.findByIdAndUpdate(
       req.params.id,
-      { $set: req.body },
+      { $set: {username,email,passport,country,city,gender,phone,isAdmin,img}},
       { new: true }
     );
     res.status(200).json(updatedUser);

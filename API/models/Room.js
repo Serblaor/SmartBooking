@@ -71,12 +71,13 @@ const RoomSchema = new mongoose.Schema(
         unavailableDates: {
           type: [Date],
         },
+        bookedBy: {
+          type: BookedBySchema,
+          required: false,
+        },
       },
     ],
-    bookedBy: {
-      type: BookedBySchema,
-      required: false,
-    },
+    
   },
   { timestamps: true }
 );

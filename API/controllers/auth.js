@@ -36,13 +36,15 @@ export const login = async (req, res, next) => {
       process.env.JWT
     );
 
-    const { password, isAdmin, ...otherDetails } = user._doc;
+    const { password, ...otherDetails } = user;
+   
+    
     res
       .cookie("access_token", token, {
         httpOnly: true,
       })
       .status(200)
-      .json({ details: { ...otherDetails }, isAdmin });
+      .json({ details:  {...otherDetails}});
   } catch (err) {
     next(err);
   }
